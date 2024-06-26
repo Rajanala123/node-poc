@@ -11,6 +11,13 @@
         "src": "/(.*)",
         "dest": "/emproutes.js"
       }
-    ]
+    ],
+    "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/"
+        }
+      ]
   }
+ 
   
