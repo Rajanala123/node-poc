@@ -8,4 +8,8 @@ let corsOptions={
     origin:'*'
 };
 router.get('/empget',cors(corsOptions),service.getdata)
-module.exports=router;
+// module.exports=router;
+module.exports = (req, res) => {
+    res.status(200).json({ message: "Hello from emproutes.js!" });
+  };
+  
